@@ -1,9 +1,10 @@
 class Room:
-    def __init__(self, name, songs, guests, capacity):
+    def __init__(self, name, songs, guests, capacity,cost):
         self.name = name
         self.songs = songs
         self.guests = guests
         self.capacity = capacity
+        self.cost = cost
         # self.waiting_list = []
 
     def remove_guest(self,guest):
@@ -17,3 +18,9 @@ class Room:
 
     def add_song(self,song):
         self.songs.append(song.name)
+
+    # def split_the_cost(self):
+    #     self.cost /len(self.guests)
+    #     # return share
+
+

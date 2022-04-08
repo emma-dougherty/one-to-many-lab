@@ -13,9 +13,9 @@ class TestRoom(unittest.TestCase):
         self.guest_4 = Guest("Keith", 70)
         self.guest_5 = Guest("Morag", 80)
 
-        self.room_1 = Room("Python Pop",["Barbie Girl"],[self.guest_1],3)
-        self.room_2 = Room("HTML Heavy Metal",["Angel of Death", "Crazy Train","War Pigs"],[self.guest_3],8)
-        self.room_3 = Room("Ruby Reggae",["3 Little Birds"],[self.guest_5],12)
+        self.room_1 = Room("Python Pop",["Barbie Girl"],[self.guest_1],3,20)
+        self.room_2 = Room("HTML Heavy Metal",["Angel of Death", "Crazy Train","War Pigs"],[self.guest_3],8,30)
+        self.room_3 = Room("Ruby Reggae",["3 Little Birds"],[self.guest_5],12,40)
        
         self.song_1 = Song("Hey Ya")
         self.song_2 = Song("It's Raining Men")
@@ -65,5 +65,11 @@ class TestRoom(unittest.TestCase):
         self.room_1.add_guest(self.guest_4)
         self.assertEqual(3,len(self.room_1.guests))
 
-    def test_guest_amount_in_wallet(self):
-        self.assertEqual(50,self.guest_1.money)
+    # def test_split_the_cost(self):
+    #     self.room_2.add_guest(self.guest_4)
+    #     self.room_2.add_guest(self.guest_5)
+    #     self.room_2.split_the_cost
+    #     self.assertEqual(10,(self.room_2.split_the_cost))
+
+
+    
