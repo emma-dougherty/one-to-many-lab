@@ -1,4 +1,5 @@
 import unittest
+
 from classes.guest import *
 from classes.room import *
 from classes.song import *
@@ -66,6 +67,3 @@ class TestRoom(unittest.TestCase):
 
     def test_guest_amount_in_wallet(self):
         self.assertEqual(50,self.guest_1.money)
-
-
-    

@@ -17,8 +17,3 @@ class Room:
 
     def add_song(self,song):
         self.songs.append(song.name)
-    
-    # def too_many_in_room(self,guest):
-    #     if len(self.guests)>self.capacity:
-    #         self.guests.pop(guest)
-    #         self.waiting_list += guest
