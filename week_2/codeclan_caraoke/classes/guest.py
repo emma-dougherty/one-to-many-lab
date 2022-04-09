@@ -9,6 +9,7 @@ class Guest:
 
 
     def enough_money(self,room):
-        return self.money >= room.cost
+        return self.money >= room
 
-  
+    def pay_for_room(self,room):
+        self.money -= room

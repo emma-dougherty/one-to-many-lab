@@ -49,11 +49,11 @@ class TestRoom(unittest.TestCase):
     def test_room_has_capacity(self):
         self.assertEqual(12,self.room_3.capacity)
     
-    # def test_too_many_in_room(self):
-    #     self.room_1.add_guest(self.guest_2)
-    #     self.room_1.add_guest(self.guest_3)
-    #     self.room_1.add_guest(self.guest_4)
-    #     self.assertEqual(3,len(self.room_1.guests))
+    def test_too_many_in_room(self):
+        self.room_1.add_guest(self.guest_2)
+        self.room_1.add_guest(self.guest_3)
+        self.room_1.add_guest(self.guest_4)
+        self.assertEqual(3,len(self.room_1.guests))
 
     # def test_split_the_cost(self):
     #     self.room_2.add_guest(self.guest_4)

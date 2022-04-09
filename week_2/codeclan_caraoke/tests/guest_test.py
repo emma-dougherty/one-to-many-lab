@@ -32,21 +32,18 @@ class TestGuest(unittest.TestCase):
     def test_guest_no_money_in_wallet(self):
         self.assertEqual(0,self.guest_6.money)
 
+    def test_enough_money_for_room(self):
+        self.assertEqual(True, self.guest_2.enough_money(self.room_2.cost))
+    
+    
+    def test_not_enough_money_for_room(self):
+        self.assertEqual(False, self.guest_6.enough_money(self.room_2.cost))
+    
+    def test_pay_for_room(self):
+        self.guest_1.pay_for_room(self.room_1.cost)
+        self.assertEqual(80,self.guest_2.money)
+    
     # def test_split_the_cost(self):
     #     self.room_2.add_guest(self.guest_4)
     #     self.room_2.add_guest(self.guest_5)
     #     self.assertEqual(10,self.room_2)
-
-    # def test_enough_money_for_room(self):
-    #     self.assertEqual(True, self.guest_2.enough_money(self.room_2.cost))
-    
-    
-    # def test_not_enough_money_for_room(self):
-    #     self.assertEqual(False, self.guest_6.enough_money(self.room_2.cost))
-
-
-    # def test_guests_favourite_song_is_available(self):
-    #     self.assertEqual("Yes! What a banger!",self.room_2.songs[0])
-
-
-    
