@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+    <section>
+        {% for player in players %}
+            {% if player.winner == "Winner" %}
+                <h2>{{ player.name }}</h2> chose <h3>{{ player.choice }}</h3>. They are the winner!!
+            {% endif %}
+        {% endfor %}
+        {% for player in players %}
+            {% if player.winner == "Tie" %}
+                <h2>{{ player.name }}</h2> chose <h3>{{ player.choice }}</h3>. 
+                <h1>Its a tie!</h1>
+            {% endif %}
+         {% endfor %}
+    </section>
+    <div>   <a href="http://127.0.0.1:4999/choice"> PLAY AGAIN </a></div>
+{% endblock %}

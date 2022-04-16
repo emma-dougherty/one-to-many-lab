@@ -40,7 +40,7 @@ class TestGuest(unittest.TestCase):
         self.assertEqual(False, self.guest_6.enough_money(self.room_2.cost))
     
     def test_pay_for_room(self):
-        self.guest_1.pay_for_room(self.room_1.cost)
+        self.guest_2.pay_for_room(self.room_1.cost)
         self.assertEqual(80,self.guest_2.money)
     
     # def test_split_the_cost(self):

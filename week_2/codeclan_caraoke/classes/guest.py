@@ -1,6 +1,3 @@
-from ast import Return
-
-
 class Guest:
     def __init__(self, name, money, favourite_song):
         self.name = name
@@ -11,5 +8,5 @@ class Guest:
     def enough_money(self,room):
         return self.money >= room
 
-    def pay_for_room(self,room):
-        self.money -= room
+    def pay_for_room(self,ammount):
+        self.money -= ammount

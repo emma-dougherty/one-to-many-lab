@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+        <h1>
+            Player 1 Make Your Choice
+        </h1>
+    <section id = "image_container">
+        <div id="image">
+            <img src = "/static/images/rockhand.png">
+            <b>Rock</b>
+        </div>
+        <div id="image">
+            <img src = "/static/images/paperplane.png">
+            <b>Paper</b>
+        </div>
+        <div id="image">
+            <img src = "/static/images/scissors2.png">
+            <b>Scissors</b>
+        </div>
+    </section>
+    <section>
+            <form class="selection" action="/choice" method="post">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+                <select name="choice"> <br>
+                    <option id = choice1 value="Rock">Rock</option>
+                    <option id = choice2 value="Paper">Paper</option>
+                    <option id = choice3 value="Scissors">Scissors<option>
+                    <br>
+                    <input id = submit type="submit" value="Play!">          
+                </select>
+            </form>
+    </section>
+{% endblock %}
