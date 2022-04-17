@@ -1,5 +1,6 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(64, 92, 126)
 }
 
 body > header{
@@ -7,12 +8,17 @@ body > header{
     padding: 20px;
     color: rgb(172, 190, 212);
 
-}
 
+}
+#home{
+
+    text-align: center;
+}
 h1{
 
     color: rgb(64, 92, 126);
     text-align: center;
+    padding: 20px;
 }
 
 ul {
@@ -50,7 +56,9 @@ a:hover {
 .selection{
     text-align: center;
     color:rgb(64, 92, 126);
-    display: inline-block;
+    padding-top: 30px;
+    padding-left: 30%;
+    padding-right: 30%;
 
 }
 
@@ -61,28 +69,28 @@ a:hover {
     text-align: center;
 }
 input[name=choice] {
-    width: 50%;
+    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-  }
+}
 
 
 input[type=text], select {
-    width: 50%;
+    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-  }
+}
   
-  input[type=submit] {
-    width: 50%;
+input[type=submit] {
+    width: 100%;
     background-color: rgb(64, 92, 126);
     color: white;
     padding: 14px 20px;
@@ -90,4 +98,16 @@ input[type=text], select {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-  }
+}
+
+#resultpage {
+
+    text-align: center;
+    color: rgb(64, 92, 126);
+}
+
+#playbutton {
+
+    text-align: center;
+    padding-top: 20px;
+}
