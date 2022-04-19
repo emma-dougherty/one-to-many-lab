@@ -20,6 +20,6 @@ def result(player1, player2):
     
     if player1.choice == player2.choice:
         player1.winner = "Tie"
-        player2.winner = "Tie"
+        # player2.winner = "Tie"
 
 

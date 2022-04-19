@@ -8,7 +8,7 @@
         {% endfor %}
         {% for player in players %}
             {% if player.winner == "Tie" %}
-                <h2>{{ player.name }}</h2> chose <h3>{{ player.choice }}</h3>
+                <h2>Both players chose <h3>{{ player.choice }}</h3>
                 <h1>Its a tie!</h1>
             {% endif %}
          {% endfor %}
